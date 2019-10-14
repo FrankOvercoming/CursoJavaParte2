@@ -1,0 +1,42 @@
+package curso1;
+
+import java.util.Locale;
+
+import com.sun.tools.javac.util.Convert;
+
+public class Programa1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int a;
+		double b;
+		int c;
+		double d;
+		String numero = "2.5";
+		char genero =  'M';
+		int idade = 40;
+		double balance = 45.9098989;
+		String name = "Jose";
+		
+		
+		a = (int) Double.parseDouble(numero);
+		b = 2;
+		c = (int) a;
+		
+		d =  a / (double) b;
+		System.out.println(b);
+		System.out.println("Valor c: " + c);
+		System.out.println("Valor d: " + d);
+		System.out.print("Sem enter");
+		System.out.println("Olha ai");
+		// Printf print formatado
+		System.out.printf("%.2f%n", balance);
+		// Quebra de linha %n ou \n
+		System.out.printf("%.4f\n", balance);
+		// Mudando caracterista de ponto flutuante
+		Locale.setDefault(Locale.FRANCE);
+		System.out.printf("%.4f\n", balance);
+		
+	}
+
+}

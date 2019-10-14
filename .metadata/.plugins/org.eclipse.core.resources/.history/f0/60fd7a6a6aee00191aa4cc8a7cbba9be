@@ -1,0 +1,16 @@
+package aplicacoes;
+
+import entidades.HerancaContaBancaria;
+import entidades.HerancaContaBancariaEmpresa;
+
+public class SobreposicaoSuperOverride {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		HerancaContaBancaria conta1 = new HerancaContaBancaria(1000, "joao", 1000D);
+		conta1.saque(200D);
+		System.out.println(conta1.getSaldo());
+		
+	}
+
+}

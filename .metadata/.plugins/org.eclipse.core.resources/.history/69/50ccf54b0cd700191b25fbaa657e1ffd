@@ -1,0 +1,23 @@
+package curso2;
+
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class Datas {
+
+	public static void main(String[] args) throws ParseException {
+		// TODO Auto-generated method stub
+		SimpleDateFormat data1 = new SimpleDateFormat("dd/MM/yyyy");
+		SimpleDateFormat data2 = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+		
+		Date dt1 = data1.parse("14/09/2019");
+		Date dt2 = data2.parse("14/09/2019 13:15:00");
+		
+		System.out.println(dt1);
+		System.out.println(dt2);
+		
+	}
+
+}

@@ -1,0 +1,42 @@
+package curso2;
+
+import java.util.Scanner;
+
+public class SwitchCase {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String saida;
+		System.out.println("Digite o dia da semana:");
+		Scanner sc = new Scanner(System.in);
+		int x = sc.nextInt();
+		switch (x) {
+		case 1:
+			saida = "Domingo";
+			break;
+		case 2:
+			saida = "Segunda-feira";
+			break;
+		case 3:
+			saida = "Terça-feira";
+			break;
+		case 4:
+			saida = "Quarta-feira";
+			break;
+		case 5:
+			saida = "Quinta-feira";
+			break;
+		case 6:
+			saida = "Sexta-feira";
+			break;
+		case 7:
+			saida = "Sabado";
+			break;
+		default:
+			saida = "Dia inválido";
+		}
+		System.out.println("Dia da semana selecionado: " + saida);
+			
+	}
+
+}

@@ -1,0 +1,26 @@
+package curso2;
+
+import java.util.Scanner;
+
+public class Programa2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String saida;
+		int saidaNumero;
+		Scanner sc = new Scanner(System.in);
+		
+		saidaNumero = sc.nextInt();
+		sc.nextLine(); // Este nextLine sem atribuição limpa o buffer porque
+		// se colocar numa variavel sem chamar o buffer fica com o enter do nextInt
+		// anterior e não deixa o console aberto para receber dados novos
+		saida = sc.nextLine();
+		
+		System.out.println("Saida: " + saida);
+		System.out.println("saidaNumero: " + saidaNumero);
+		
+		sc.close();
+		
+	}
+
+}

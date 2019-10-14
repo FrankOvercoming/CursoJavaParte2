@@ -1,0 +1,19 @@
+package curso2;
+
+public class EscopoEInicializacaoVariaveis {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		double valor = 20;
+		String saida;
+		
+		if (valor > 100) {
+			saida = "Funfou";
+		} else {
+			saida = "funfou2";
+		}
+		System.out.println(saida);
+
+	}
+
+}

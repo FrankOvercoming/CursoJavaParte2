@@ -1,0 +1,12 @@
+package curso2;
+
+public class FuncoesParaString {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String original = "teste de strings";
+		System.out.println(original.toUpperCase());
+	}
+	
+
+}

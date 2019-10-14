@@ -1,0 +1,35 @@
+package aplicacoes;
+
+import java.text.ParseException;
+import java.util.Locale;
+import java.util.Scanner;
+
+import entidades.Exercicio1Cliente;
+import entidades.Exercicio1Produto;
+import entidades.enums.Exercicio1StatusPedido;
+
+public class Exercicio1Pedidos {
+
+	public static void main(String[] args) throws ParseException {
+		// TODO Auto-generated method stub
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		Exercicio1Pedidos pedido = new Exercicio1Pedidos();
+		Exercicio1Cliente cliente = new Exercicio1Cliente();
+	    Exercicio1StatusPedido status;
+		System.out.println("Status do pedido");
+		status = Exercicio1StatusPedido.valueOf(sc.nextLine());
+		System.out.println(status);
+		
+		System.out.println("Informe o nome do cliente: ");
+		cliente.setNome(sc.nextLine());
+		System.out.println("Informe email do cliente: ");
+		cliente.setEmail(sc.nextLine());
+		System.out.println("Data nascimento (DD/MM/YYYY): ");
+		cliente.setAniversario(sc.nextLine());
+		System.out.println(cliente);
+		System.out.println("Entre os dados do pedido");
+		
+	}
+
+}

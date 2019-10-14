@@ -1,0 +1,17 @@
+package curso2;
+
+import java.util.Scanner;
+
+public class curso2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// Entrada de dados pelo console
+		Scanner sc = new Scanner(System.in);
+		String words;
+		
+		words = sc.nextLine();
+		System.out.println(words);
+	}
+
+}

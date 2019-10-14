@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.lang.Runtime"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.lang.Double"/>
+    <fullyQualifiedTypeName name="aplicacoes.ProdutosEncapsulados"/>
+    <fullyQualifiedTypeName name="entidades.ProdutoEncapsulamento"/>
+    <fullyQualifiedTypeName name="aplicacoes.ProdutosConstrutor"/>
+    <fullyQualifiedTypeName name="entidades.ProdutoConstrutor"/>
+    <fullyQualifiedTypeName name="entidades.ContratoPorHora"/>
+    <fullyQualifiedTypeName name="java.util.Calendar"/>
+    <fullyQualifiedTypeName name="entidades.Trabalhador"/>
+    <fullyQualifiedTypeName name="javax.swing.plaf.nimbus.NimbusLookAndFeel"/>
+    <fullyQualifiedTypeName name="entidades.enums.NivelTrabalhador"/>
+    <fullyQualifiedTypeName name="entidades.Departamento"/>
+    <fullyQualifiedTypeName name="entidades.Comentarios"/>
+    <fullyQualifiedTypeName name="entidades.Postagens"/>
+    <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
+    <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="entidades.enums.Exercicio1StatusPedido"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.util.Locale"/>
+    <fullyQualifiedTypeName name="entidades.Exercicio1Cliente"/>
+    <fullyQualifiedTypeName name="entidades.Exercicio1Produto"/>
+    <fullyQualifiedTypeName name="entidades.Exercicio1PedidoItens"/>
+    <fullyQualifiedTypeName name="entidades.HerancaContaPoupanca"/>
+    <fullyQualifiedTypeName name="entidades.HerancaContaBancaria"/>
+    <fullyQualifiedTypeName name="entidades.HerancaContaBancariaEmpresa"/>
+</qualifiedTypeNameHistroy>

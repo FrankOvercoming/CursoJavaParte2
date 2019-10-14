@@ -1,0 +1,15 @@
+package curso2;
+
+public class EscopoEInicializacaoVariaveis {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		double teste;
+		{
+			String saida = "Funfou";
+		}
+		System.out.println(saida);
+
+	}
+
+}

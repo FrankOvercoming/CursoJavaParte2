@@ -1,0 +1,24 @@
+package curso2;
+
+import java.util.Scanner;
+
+public class curso2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// Entrada de dados pelo console
+		Scanner sc = new Scanner(System.in);
+		String words;
+		String palavra1, palavra2, palavra3;
+		
+		palavra1 = sc.next();
+		palavra2 = sc.next();
+		palavra3 = sc.next();
+		
+		System.out.println("Palavra1: " + palavra1);
+		// nestline espera uma frase ou palavra no console e depois do enter coloca na variavel
+		words = sc.nextLine();
+		System.out.println(words);
+	}
+
+}

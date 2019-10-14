@@ -1,0 +1,20 @@
+package curso2;
+
+import java.util.Scanner;
+
+public class Condicionais {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Digite um numero para saber se é par ou impar");
+		Scanner sc = new Scanner(System.in);
+		int i = sc.nextInt();
+		if ( i % 2 > 0) {
+			System.out.println("Este numero é par");
+		} else {
+			System.out.println("Este numero é impar");
+		}
+
+	}
+
+}

@@ -1,0 +1,41 @@
+package aplicacoes;
+
+import entidades.HerancaContaBancaria;
+import entidades.HerancaContaBancariaEmpresa;
+import entidades.HerancaContaPoupanca;
+
+public class UpcastingDowncasting {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		HerancaContaBancaria conta = new HerancaContaBancaria(2000, "Zé das coves", 150.3);
+		HerancaContaBancariaEmpresa contaEmpresa = new HerancaContaBancariaEmpresa(3000, "joelma", 20.6, 5.4);
+		
+		// UpCasting
+		// Nestes dois casos não deu erro porque estamos atribuindo uma subClasse a uma Classe, isto é UpCasting
+		HerancaContaBancaria contaTeste = contaEmpresa;
+		HerancaContaBancaria conta2 = new HerancaContaBancariaEmpresa(4000, "zé do teste", 34.8, 22.3);
+		HerancaContaBancaria conta3 = new HerancaContaPoupanca(3455 , "Manuel", 300D, 45.7);
+		
+		//DownCasting
+		HerancaContaBancariaEmpresa conta4 = (HerancaContaBancariaEmpresa) conta2;
+		conta4.emprestimo(100D);
+		
+		// Esta linha não da erro em tempo de compilação, somente em tempo de execução
+		// Porque eu não posso fazer um DownCasting de um objeto que não é subclasse da classe que está sendo instanciada
+		// pois conta3 é do tipo poupança e não empresa
+		// HerancaContaBancariaEmpresa conta5 = (HerancaContaBancariaEmpresa) conta3;
+		
+		if (conta3 instanceof HerancaContaBancariaEmpresa ) {
+			HerancaContaBancariaEmpresa conta6 = (HerancaContaBancariaEmpresa) conta3;
+			System.out.println("Conta3 é do tipo empresa");
+		}
+		
+		if ( conta2 instanceof HerancaContaBancariaEmpresa) {
+			HerancaContaBancariaEmpresa conta7 = (HerancaContaBancariaEmpresa) conta2;
+			System.out.println("Conta2 é do tipo empresa, então fazemos Downcasting");
+		}
+	}
+
+}

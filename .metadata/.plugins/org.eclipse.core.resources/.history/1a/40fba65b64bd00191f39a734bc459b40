@@ -1,0 +1,25 @@
+package curso2;
+
+public class FuncoesParaString {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String original = " teste de strings ";
+		String saidaUpper = original.toUpperCase();
+		String saidaLower = saidaUpper.toLowerCase();
+		String pedaco = original.substring(6);
+		String pedacoMeio = original.substring(6, 10);
+		String trocaStringChar = original.replace('e', 'i');
+		String trocaString = original.replace("e", "i");
+		System.out.println(original);
+		System.out.println(saidaUpper);
+		System.out.println(saidaLower);
+		System.out.println("Saida: " + pedaco);
+		System.out.println("Saida pedaco meio:" + pedacoMeio + "----" );
+		System.out.println("Pedaco meio com trim:" + pedacoMeio.trim() + "---");
+		System.out.println("Replace char:" + trocaStringChar);
+		System.out.println("Replace string:" + trocaString);
+	}
+	
+
+}

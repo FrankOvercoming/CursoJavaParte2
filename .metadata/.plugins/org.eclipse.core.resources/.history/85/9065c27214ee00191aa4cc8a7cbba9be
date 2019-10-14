@@ -1,0 +1,38 @@
+package entidades;
+
+public class HerancaContaPoupanca extends HerancaContaBancaria {
+	private Double taxaJuros;
+	
+	public HerancaContaPoupanca() {
+		
+	}
+	
+	
+	public HerancaContaPoupanca(Integer numeroConta, String nomeTitular, Double saldo, Double taxaJuros) {
+		super(numeroConta, nomeTitular, saldo);
+		this.taxaJuros = taxaJuros;
+}
+
+	
+
+	public Double getTaxaJuros() {
+		return taxaJuros;
+	}
+
+
+	public void setTaxaJuros(Double taxaJuros) {
+		this.taxaJuros = taxaJuros;
+	}
+
+
+	public void atualizaSaldoComJuros() {
+		saldo += (saldo * taxaJuros) / 100;
+		
+	}
+	
+	@Override
+	public void saque(Double valor) {
+		saldo -= valor;
+	}
+	
+}

@@ -1,0 +1,21 @@
+package curso2;
+
+public class FuncoesParaString {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String original = " teste de strings ";
+		String saidaUpper = original.toUpperCase();
+		String saidaLower = saidaUpper.toLowerCase();
+		String pedaco = original.substring(6);
+		String pedacoMeio = original.substring(6, 9);
+		System.out.println(original);
+		System.out.println(saidaUpper);
+		System.out.println(saidaLower);
+		System.out.println("Saida: " + pedaco);
+		System.out.println("Saida pedaco meio: " + pedacoMeio + "----" );
+		
+	}
+	
+
+}

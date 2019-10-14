@@ -1,0 +1,25 @@
+package curso1;
+
+import com.sun.tools.javac.util.Convert;
+
+public class Programa1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int a;
+		int b;
+		int c;
+		double d;
+		String numero = "5";
+		
+		a = Integer.parseInt(numero);
+		b = 2;
+		c = (int) a;
+		
+		d = (double) a / b;
+		System.out.println(b);
+		System.out.println("Valor c: " + c);
+		System.out.println("Valor d: " + d);
+	}
+
+}

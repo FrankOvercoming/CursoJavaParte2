@@ -1,0 +1,36 @@
+package curso2;
+
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class Datas {
+
+	public static void main(String[] args) throws ParseException, InterruptedException {
+		// TODO Auto-generated method stub
+		SimpleDateFormat data1 = new SimpleDateFormat("dd/MM/yyyy");
+		SimpleDateFormat data2 = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+		
+		Date dt1 = data1.parse("14/09/2019");
+		Date dt2 = data2.parse("14/09/2019 13:15:00");
+		Date agora = new Date();
+		Thread.sleep(1000);
+		Date agora2 = new Date(System.currentTimeMillis());
+		// Data original do java é 1 de janeiro de 1970 em milissegundos assim é armazenado
+		// então se pedirmos uma data com valor 0 de milissegundos teremos
+		// 21 horas do dia 31/12/1969
+		
+		Date zero = new Date(0L);
+		
+		System.out.println("Data dt1: " + data1.format(dt1));
+		System.out.println("Data dt2: " + data2.format(dt2));
+		System.out.println("Data agora: " + data2.format(agora));
+		System.out.println("Data agora2: " + data2.format(agora2));
+		System.out.println("Data zero: " + data2.format(zero));
+		
+		
+		
+	}
+
+}

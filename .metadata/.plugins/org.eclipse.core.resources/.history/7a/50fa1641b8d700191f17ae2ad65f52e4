@@ -1,0 +1,27 @@
+package curso2;
+
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+
+public class DataComCalendar {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		SimpleDateFormat data = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+		
+		Date data1 = new Date();
+		
+		System.out.println("Data atual: " + data.format(data1));
+		
+		Calendar cal = Calendar.getInstance();
+		
+		cal.setTime(data1);
+		
+		cal.add(Calendar.HOUR, 3);
+		
+		System.out.println("Hora atual mais 3 horas: " + cal.getTime());
+		
+	}
+
+}

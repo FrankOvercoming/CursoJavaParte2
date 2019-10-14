@@ -1,0 +1,22 @@
+package curso1;
+
+public class Programa1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int a;
+		int b;
+		int c;
+		double d;
+		
+		a = (int) 6.3;
+		b = 2;
+		c = (int) a;
+		
+		d = a / b;
+		System.out.println(b);
+		System.out.println("Valor c: " + c);
+		System.out.println("Valor d: " + d);
+	}
+
+}
