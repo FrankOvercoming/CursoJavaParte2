@@ -22,7 +22,6 @@ public class SobreposicaoSuperOverride {
 		conta3.saque(200D);
 		System.out.println(conta3.getSaldo());
 		
-		// Teste de git
 	}
 
 }
