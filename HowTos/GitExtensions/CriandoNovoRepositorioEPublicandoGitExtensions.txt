@@ -1,0 +1,24 @@
+Criar uma pasta e colocar arquivos dentro
+
+Depois ir no Menu Start/Create New Repository
+
+Em Directory colocar a pasta criada com os arquivos dentro
+
+Depois vamos publicar
+
+Entrar no Github e criar novo repositorio, pegar o link desse repositório
+
+Depois vamos configurar para fazer o push indo do lado esquerdo em Remotes com o botão
+direito selecionar Manage e na guia Remote repositories configurar o servidor
+O campo name escrever origin que é o nome padrão para repositórios no github
+No campo Url pode colocar como http que é o link fornecido pelo github como por exemplo
+para o repositório de nome Teste1
+https://github.com/FrankOvercoming/Teste1
+Para obter esse link clicar no repositorio abrir a pagina dele e clicar com o botão
+direito no nome superior da pagina [NomeUsuario]/[NomeRepositorio] exemplo
+FrankOvercoming/Teste1
+
+Colocando como o link https ele pedirá login e senha ou pode usar putty ssh que deve ser
+configurado antes ler o documento sobre Putty
+
+Dar save changes e depois fazer o push no botão da barra de ferramentas
