@@ -1,0 +1,61 @@
+Uma vez instalado o git extensions, vc entra no menu Tools/Putty/Generate or Import Key
+Gera a chave SSH e salva os 2 arquivos o publico e o privado, com nomes parecidos
+para que vc use os 2 em conjunto
+
+Agora ir para a pagina do GitHub
+Uma vez salvo entrar no github no menu do icone no canto superior direito e escolher settings
+Depois vai em SSH e GPG Keys e clica em New ssh key
+Agora abra o arquivo onde está a chave publica e copie o conteudo sendo que quando for 
+colocar na pagina alterar para:
+O conteudo do arquivo da chave publica deverá ser como este abaixo:
+
+---- BEGIN SSH2 PUBLIC KEY ----
+Comment: "rsa-key-20191019"
+AAAAB3NzaC1yc2EAAAABJQAAAQEAkAZlFKa6H9S7cG81VsFnBS3emyn8aeDJlfZ1
+7zKoSSl9CPevgtXrFttnc8CldUS+BFFDQp0IMbAql2YwrDw9hQRxrLRMVh7kfQub
+N6mM+bs/U6CdzRd7MUVb0RdnhGGfj9PYC8GVsBC6pYzYdmwPGDhJ/ftvQpmyZibr
+LW4JKtllxDpMYAN+2MKOx8jJB2YgCUAb2ArnaTSlmpGhEsO9V9xTfbhptnnc5cVq
++NL/o8U3Fl2XN6r3xwlnAigauucnv6DZtQS+mHrEeA61rjr+YBfMBRxg2a49o8DO
+tkQLxWo9+CBfyTAWYEXYQ9NSBJ0utjBFC7Sb2Y5ZBxsIlS/trw==
+---- END SSH2 PUBLIC KEY ----
+
+Agora para colocar na pagina ele deve estar assim: 
+ssh-rsa 
+AAAAB3NzaC1yc2EAAAABJQAAAQEAkAZlFKa6H9S7cG81VsFnBS3emyn8aeDJlfZ1
+7zKoSSl9CPevgtXrFttnc8CldUS+BFFDQp0IMbAql2YwrDw9hQRxrLRMVh7kfQub
+N6mM+bs/U6CdzRd7MUVb0RdnhGGfj9PYC8GVsBC6pYzYdmwPGDhJ/ftvQpmyZibr
+LW4JKtllxDpMYAN+2MKOx8jJB2YgCUAb2ArnaTSlmpGhEsO9V9xTfbhptnnc5cVq
++NL/o8U3Fl2XN6r3xwlnAigauucnv6DZtQS+mHrEeA61rjr+YBfMBRxg2a49o8DO
+tkQLxWo9+CBfyTAWYEXYQ9NSBJ0utjBFC7Sb2Y5ZBxsIlS/trw==
+
+Importante salientar que na linha onde está escrito ssh-rsa é preciso ter um espaço
+logo depois do rsa e depois o enter ficando assim: "ssh-rsa "
+
+Agora uma vez a chave publica aceita vamos configurar o remote repositories, indo do lado
+esquerdo em remotes e origin e clicando com o botão direito e escolhendo Manage
+
+Na tela do remote repositories na guia remote repositories haverá um campo chamado 
+Private key file, neste campo colocar o arquivo que contém a chave privada gerada anteriormente
+depois clicar em Load SSH key não haverá feedbak porém um programa irá rodar no windows
+ele estará nos icones de bandeja trayicon ao lado do relogio o nome dele é Pageant Key List
+Se por acaso der alguma mensagem dizendo que ele ja está carregado, desligar ele clicando
+com o botão direito no trayicon dele e clicar em exit
+
+Agora no campo acima chamado Url apenas para testar a conexão digite git@github.com e clique
+em Text Connection e se estiver tudo certo vai abrir uma janela dizendo: 
+Using username "git".
+Hi FrankOvercoming! You've successfully authenticated, but GitHub does not provide shell access.
+
+Ótimo a conexão com as chaves funcionou agora para terminar e conseguir fazer push e pull
+sem que precise de autenticar todas as vezes no campo Url configurar o usuario e o repositorio
+desta forma:
+
+git@github:[Usuario do git hub]/[nome do repositorio].git
+
+exemplo, digamos que no github está assim Usuario: FrankOvercoming e repositorio Curso.git
+ficará então
+
+git@github:FrankOvercoming/Curso.git
+
+Uma vez cponfigurado isso clicar em save changes, dando tudo certo vai aparecer o feedbak
+verde, pronto ja pode fazer push e pull sem precisar colocar usuario e senha toda vez
