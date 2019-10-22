@@ -1,0 +1,21 @@
+Os submodulos nada mais são do que um repositorio dentro de outro repositorio
+E são tratados como um repositorio normal, isto é, vc altera ele commita e faz o push para
+o github como se fosse um repositorio normal, inclusive da pra fazer isso entrando mesmo
+neste repositorio
+
+Para adicionar o sub repositório vá em submodules clicar com botão direito no sub item de 
+menu com o nome do projeto logo abaixo de submodules e selecionar Manage..
+
+Clicar em Add submodule, no campo Path to submodule pode colocar o endereço https, ou
+usar o putty usando um endereço git@github:[nome do usuario]/[repositorio].git ou colocar 
+um diretório. O ideal é usar o https ou o git para apontar para o repositório no github
+
+O campo local path será o nome do sub diretório que irá ficar no diretorio do repositório
+principal, isto é, se o repositório principal for c:\Projetos\RepoPrincipal o nome colocado
+neste campo será o nome do diretório criado em C:\Projetos\RepoPrincipal\[nome colocado]
+
+No campo branch colocar master que é o branch principal do repositório que está sendo
+colocado como submodulo
+
+Para excluir submodulo, precisa primeiro eliminar a pasta do submodulo que está na pasta
+do repositorio principal, depois eliminar o arquivo .gitmodules
