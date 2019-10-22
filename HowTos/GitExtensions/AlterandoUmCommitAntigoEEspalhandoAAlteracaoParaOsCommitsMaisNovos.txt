@@ -1,0 +1,12 @@
+como alterar um commit antigo e fazer com que as alterações se espalhem para os commits mais novos do que ele
+
+Selecionar o commit antigo que se quer modificar e botao direito, escolher Advanced/Edit commit, pronto esse commit ja pode ser 
+modificado
+
+Depois de modificado, arquivos dentro desse commit forem adicionados ou modificados ou qualquer outra alteração, pronto
+agora efetivar esse commit executando o commit dele normalmente, ele irá para o topo dos commits
+
+Pronto agora que ele está no topo vamos fazer o rebase, clicando no canto inferior direito onde está escrito "You are in the middle of a rebase"
+clicar depois no botão Continue Rebase, pronto os commits posteriores ao commit editado voltaram para o inicio da lista, efetivando a modificação 
+do commit editado e trazendo em cada commit a modificação a partir daquele commit editado
+
