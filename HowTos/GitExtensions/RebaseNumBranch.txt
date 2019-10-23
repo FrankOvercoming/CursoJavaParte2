@@ -1,0 +1,13 @@
+Como fazer e como funciona rebase num branch
+
+Ao abrir um branch de revisão por exemplo, para se iniciar uma nova ramificação de alteração dos codigos fontes do projeto,
+ ficamos com o branch master e o branch aberto agora
+e este branch aberto agora tem tudo que tinha no branch master no momento da abertura
+
+Digamos que esse branch master foi alterado, adicionado coisas, modificado, e foi feito commit, então o branch aberto de revisão não terá essas modificacoes
+o mais indicado seria fazer um rebase nesse branch de revisão, esse rebase irá reconstruir todos os commits do master no branch de revisão, inclusive
+os commits feitos depois do branch de revisão ter sido criado, deixando assim o historico de commits do branch de revisão igual ao do branch master
+
+Para isso fazer checkout no branch de revisão, ir no menu commands/Rebase, no campo rebase on escolher o branch master, pois quer dizer que o branch de revisão
+que irá receber os commits do branch master, e clicar em rebase, pronto agora todos os novos commits criados no branch master depois que o branch de revisão
+foi criado estão também agora no branch de revisão
