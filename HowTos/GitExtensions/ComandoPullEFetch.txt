@@ -6,12 +6,15 @@ que uma, origens aqui são os repositorios que estão no servidor github
 
 O comando pull traz as atualizações do servidor e se tiver commit local sem ser 
 enviado para o servidor da 2 opções
+
 A primeira é fazer um merge com as atualizações que estão no servidor, este merge
 pega as atualizações do servidor e junta com os commits locais
 
 A segunda é fazer um rebase que é pegar as atualizações do servidor e colocar abaixo
 dos commits locais que não foram enviados para o servidor e depois colocar os commits
 locais por cima delas
+
+**** Não é recomendado fazer rebase quando se está trabalhando com equipes grandes
 
 fetch and prune all - faz o fetch e delete no servidor os branchs que não estiverem mais
 sendo usados
