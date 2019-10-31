@@ -30,6 +30,6 @@
     <fullyQualifiedTypeName name="entidades.Exercicio1Produto"/>
     <fullyQualifiedTypeName name="entidades.Exercicio1PedidoItens"/>
     <fullyQualifiedTypeName name="entidades.HerancaContaPoupanca"/>
-    <fullyQualifiedTypeName name="entidades.HerancaContaBancaria"/>
     <fullyQualifiedTypeName name="entidades.HerancaContaBancariaEmpresa"/>
+    <fullyQualifiedTypeName name="entidades.HerancaContaBancaria"/>
 </qualifiedTypeNameHistroy>

@@ -1,0 +1,6 @@
+package entidades;
+
+public class FinalContaPopancaPlus extends HerancaContaPoupanca {
+	// Não posso herdar da classe HerancaContaPoupanca porque ela usa a declaração final
+
+}

@@ -21,8 +21,8 @@ public class HerancaContaBancaria {
 		this.nomeTitular = nomeTitular;
 		this.saldo = saldo;
 	}
-
-	public Integer getNumeroConta() {
+// final evita que o metodo seja sobreposto
+	public final Integer getNumeroConta() {
 		return numeroConta;
 	}
 

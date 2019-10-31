@@ -1,6 +1,7 @@
 package entidades;
 
-public class HerancaContaPoupanca extends HerancaContaBancaria {
+// Aplicacao da palavra final numa classe evita que ela seja herdada
+public final class HerancaContaPoupanca extends HerancaContaBancaria {
 	private Double taxaJuros;
 	
 	public HerancaContaPoupanca() {
@@ -14,8 +15,8 @@ public class HerancaContaPoupanca extends HerancaContaBancaria {
 }
 
 	
-
-	public Double getTaxaJuros() {
+	// Uso da palavra final no metodo evita que ele seja sobreposto
+	public final Double getTaxaJuros() {
 		return taxaJuros;
 	}
 
@@ -30,8 +31,8 @@ public class HerancaContaPoupanca extends HerancaContaBancaria {
 		
 	}
 	
-	// Palavra override faz o compilador veriricar se realmente este método está sobreescrevendo
-	// o mesmo metodo com a mesma assinatura no classe pai
+	// Palavra override faz o compilador verificar se realmente este método está sobreescrevendo
+	// o mesmo metodo com a mesma assinatura na classe pai
 	@Override
 	public void saque(Double valor) {
 		saldo -= valor;
