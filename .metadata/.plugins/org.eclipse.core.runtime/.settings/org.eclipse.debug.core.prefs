@@ -1,2 +1,2 @@
 eclipse.preferences.version=1
-prefWatchExpressions=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<watchExpressions/>\r\n
+prefWatchExpressions=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<watchExpressions>\r\n    <expression enabled\="true" text\="Math.pow(10,2)"/>\r\n    <expression enabled\="true" text\="Math.round(10.453 * 100) / 100D"/>\r\n    <expression enabled\="true" text\="double teste \= 1234 / 100"/>\r\n    <expression enabled\="true" text\="&quot;%.&quot; + qtdDecimais + &quot;f&quot;"/>\r\n    <expression enabled\="true" text\="String.format(&quot;%.2f&quot;,12.4345)"/>\r\n</watchExpressions>\r\n
