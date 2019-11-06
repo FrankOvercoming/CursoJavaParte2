@@ -31,10 +31,14 @@
     <fullyQualifiedTypeName name="entidades.PolimorfismoEmpregado"/>
     <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="entidades.PolimorfismoProdutoImportado"/>
     <fullyQualifiedTypeName name="entidades.PolimorfismoProdutoUsado"/>
     <fullyQualifiedTypeName name="entidades.PolimorfismoProduto"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="com.sun.tools.javac.comp.Enter"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="entidades.ClassesAbstratasPessoaFisica"/>
+    <fullyQualifiedTypeName name="entidades.ClassesAbstratasPessoaJuridica"/>
+    <fullyQualifiedTypeName name="entidades.ClassesAbstratasPessoas"/>
 </qualifiedTypeNameHistroy>
