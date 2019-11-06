@@ -1,0 +1,14 @@
+Quando se quer fazer um pull que é trazer as atualizações do servidor e vc ja tem
+commits para serem feitos, o sistema te aconselha a fazer um stash
+
+Stash nada mais é do que um branch temporario criado pelo git, que fica guardado separado
+e o commit pendente desaparece, podendo assim fazer o pull como se não tivesse nenhuma
+alteração a ser commitada antes.
+
+Para fazer o stash:
+Menu command, depois manage stashes, depois stash all changes
+
+Para voltar o stash para poder ser comitado:
+Menu command, depois manage stashes, escolher o stash na lista show:,
+depois Apply Selected Stash
+
