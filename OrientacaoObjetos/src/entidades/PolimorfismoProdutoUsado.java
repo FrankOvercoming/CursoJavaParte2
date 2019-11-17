@@ -7,7 +7,10 @@ import java.util.Date;
 public class PolimorfismoProdutoUsado extends PolimorfismoProduto {
 
 	private Date dataFabricacao;
-	private SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+		// SimpleDateFormat sdf foi instanciado como static pois assim todo objeto postagens
+		// criado não criará um objeto sdf novo, pois static pertence a classe, assim sendo
+		// economizando memoria e recursos
+	private static SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 	
 	
 	public PolimorfismoProdutoUsado() {

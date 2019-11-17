@@ -10,7 +10,10 @@ import entidades.enums.Exercicio1StatusPedido;
 public class Exercicio1Pedido {
 	private Date dataPedido;
 	private Exercicio1StatusPedido statusPedido;
-	private SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+	// SimpleDateFormat sdf foi instanciado como static pois assim todo objeto postagens
+		// criado não criará um objeto sdf novo, pois static pertence a classe, assim sendo
+		// economizando memoria e recursos
+	private static SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
 	
 	private List<Exercicio1PedidoItens> itensPedido = new ArrayList<>();
 

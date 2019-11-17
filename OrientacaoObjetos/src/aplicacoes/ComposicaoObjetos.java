@@ -18,6 +18,8 @@ public class ComposicaoObjetos {
 
 	public static void main(String[] args) throws ParseException {
 		// TODO Auto-generated method stub
+		// SimpleDateFormat pode ser instanciado como static no inicio da classe
+		// assim ele não será criado um novo para cada objeto pois static pertence a classe
 		SimpleDateFormat dataFormato = new SimpleDateFormat("dd/MM/yyyy");
 		SimpleDateFormat mesAno = new SimpleDateFormat("MM/yyyy");
 		
