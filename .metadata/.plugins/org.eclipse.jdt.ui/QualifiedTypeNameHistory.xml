@@ -29,8 +29,6 @@
     <fullyQualifiedTypeName name="entidades.HerancaContaBancaria"/>
     <fullyQualifiedTypeName name="entidades.PolimorfismoEmpregadoTerceirizado"/>
     <fullyQualifiedTypeName name="entidades.PolimorfismoEmpregado"/>
-    <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
-    <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="entidades.PolimorfismoProdutoImportado"/>
     <fullyQualifiedTypeName name="entidades.PolimorfismoProdutoUsado"/>
     <fullyQualifiedTypeName name="entidades.PolimorfismoProduto"/>
@@ -41,4 +39,7 @@
     <fullyQualifiedTypeName name="entidades.ClassesAbstratasPessoaFisica"/>
     <fullyQualifiedTypeName name="entidades.ClassesAbstratasPessoaJuridica"/>
     <fullyQualifiedTypeName name="entidades.ClassesAbstratasPessoas"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="java.util.concurrent.TimeUnit"/>
+    <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
 </qualifiedTypeNameHistroy>
