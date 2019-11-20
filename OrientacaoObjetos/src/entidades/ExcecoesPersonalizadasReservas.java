@@ -46,9 +46,20 @@ public class ExcecoesPersonalizadasReservas {
 	}
 
 
-	public void atualizaDatas(Date checkIN, Date checkOUT) {
-		this.checkIn = checkIN;
-		this.checkOut = checkOUT;
+	public String atualizaDatas(Date checkIN, Date checkOUT) {
+		
+		Date agora = new Date();
+		if ( checkIN.before(agora) || checkOUT.before(agora) ) {
+			return ("Data de checkIn ou checkOut não pode ser anterior a data atual");
+			
+		} else if(checkIN.after(checkOUT)){
+			return ("Data de checkIn não pode ser posterior a data de checkOut");
+		} else {	
+		
+			this.checkIn = checkIN;
+			this.checkOut = checkOUT;
+			return "";
+		}
 	}
 	
 	//Calculo para diferença entre duas datas

@@ -34,17 +34,20 @@ public class ExcecoesPersonalizadas {
 				System.out.println("Entre data do checkOut(dd/mm/yyyy): ");
 				checkOut = sdf.parse(sc.next());
 				
-				Date agora = new Date(); // retorna data de agora
+//				Date agora = new Date(); // retorna data de agora
+//				
+//				if ( checkIn.before(agora) || checkOut.before(agora) ) {
+//					System.out.println("Data de checkIn ou checkOut não pode ser anterior a data atual");
+//					
+//				} else if(checkIn.after(checkOut)){
+//					System.out.println("Data de checkIn não pode ser posterior a data de checkOut");
+//				} else {
+					String retorno = reserva.atualizaDatas(checkIn, checkOut);
+					if (retorno.isEmpty()) {
+						System.out.println("Reserva: " + reserva);
+					} else
+						System.out.println(retorno);
 				
-				if ( checkIn.before(agora) || checkOut.before(agora) ) {
-					System.out.println("Data de checkIn ou checkOut não pode ser anterior a data atual");
-					
-				} else if(checkIn.after(checkOut)){
-					System.out.println("Data de checkIn não pode ser posterior a data de checkOut");
-				} else {
-					reserva.atualizaDatas(checkIn, checkOut);
-					System.out.println("Reserva: " + reserva);
-				}
 				
 			}
 			
