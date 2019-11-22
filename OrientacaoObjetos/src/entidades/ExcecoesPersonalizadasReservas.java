@@ -46,19 +46,21 @@ public class ExcecoesPersonalizadasReservas {
 	}
 
 
-	public String atualizaDatas(Date checkIN, Date checkOUT) {
+	public void atualizaDatas(Date checkIN, Date checkOUT) {
 		
 		Date agora = new Date();
 		if ( checkIN.before(agora) || checkOUT.before(agora) ) {
-			return ("Data de checkIn ou checkOut não pode ser anterior a data atual");
+			// Lançando uma exceção que ja existe no java sem ter que criar uma classe de exceção
+			// particular, no caso como é um argumento invalido ou checkIn ou checkOut
+			// então podemos lançar a IllegalArgumentException
+			throw new IllegalArgumentException("Data de checkIn ou checkOut não pode ser anterior a data atual");
 			
 		} else if(checkIN.after(checkOUT)){
-			return ("Data de checkIn não pode ser posterior a data de checkOut");
+			throw new IllegalArgumentException("Data de checkIn não pode ser posterior a data de checkOut");
 		} else {	
 		
 			this.checkIn = checkIN;
 			this.checkOut = checkOUT;
-			return "";
 		}
 	}
 	

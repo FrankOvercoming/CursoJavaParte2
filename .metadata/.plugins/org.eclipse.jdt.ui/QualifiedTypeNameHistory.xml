@@ -32,14 +32,20 @@
     <fullyQualifiedTypeName name="entidades.PolimorfismoProdutoImportado"/>
     <fullyQualifiedTypeName name="entidades.PolimorfismoProdutoUsado"/>
     <fullyQualifiedTypeName name="entidades.PolimorfismoProduto"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="com.sun.tools.javac.comp.Enter"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="entidades.ClassesAbstratasPessoaFisica"/>
     <fullyQualifiedTypeName name="entidades.ClassesAbstratasPessoaJuridica"/>
     <fullyQualifiedTypeName name="entidades.ClassesAbstratasPessoas"/>
-    <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="java.util.concurrent.TimeUnit"/>
     <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="jdk.internal.vm.annotation.ReservedStackAccess"/>
+    <fullyQualifiedTypeName name="entidades.ExcecoesPersonalizadasReservas"/>
+    <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="java.text.ParseException"/>
+    <fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
 </qualifiedTypeNameHistroy>
