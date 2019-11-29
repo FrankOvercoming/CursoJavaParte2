@@ -4,6 +4,8 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
+import entidades.excecoes.ExcecoesPersonalizadasExcecao;
+
 public class ExcecoesPersonalizadasReservas {
 	
 	private Integer numeroQuarto;
@@ -15,7 +17,16 @@ public class ExcecoesPersonalizadasReservas {
 	private static SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 	
 	
-	public ExcecoesPersonalizadasReservas(Integer numeroQuarto, Date checkIn, Date checkOut) {
+	public ExcecoesPersonalizadasReservas(Integer numeroQuarto, Date checkIn, Date checkOut) throws ExcecoesPersonalizadasExcecao {
+		Date agora = new Date();
+		if ( checkIn.before(agora) || checkOut.before(agora) ) {
+			// Lançando essa exceção no construtor tb vamos nos beneficiar do try/catch utilizado
+			// na função que utiliza este objeto, sem que precisemos mudar nada na função
+			// que cria este objeto se a instanciação estiver ja entre Try/catch
+			throw new ExcecoesPersonalizadasExcecao("Data de checkIn ou checkOut não pode ser anterior a data atual");
+		} else if(checkIn.after(checkOut)){
+			throw new ExcecoesPersonalizadasExcecao("Data de checkIn não pode ser posterior a data de checkOut");
+		}
 		this.numeroQuarto = numeroQuarto;
 		this.checkIn = checkIn;
 		this.checkOut = checkOut;
@@ -46,17 +57,31 @@ public class ExcecoesPersonalizadasReservas {
 	}
 
 
-	public void atualizaDatas(Date checkIN, Date checkOUT) {
+	public void atualizaDatas(Date checkIN, Date checkOUT) throws ExcecoesPersonalizadasExcecao {
 		
 		Date agora = new Date();
 		if ( checkIN.before(agora) || checkOUT.before(agora) ) {
 			// Lançando uma exceção que ja existe no java sem ter que criar uma classe de exceção
 			// particular, no caso como é um argumento invalido ou checkIn ou checkOut
 			// então podemos lançar a IllegalArgumentException
-			throw new IllegalArgumentException("Data de checkIn ou checkOut não pode ser anterior a data atual");
+			// Ao lançar uma exceção devemos trata-la, deveriamos colocar essa linha do throw
+			// entre um try/catch, porém como queremos que a função que chama esta classe
+			// trate o erro então propagamos a exceção na assinatura do metodo através
+			// do comando throws, no caso da IllegalArgumentException o compilador não
+			// exigiu a propagação porque ela herda a classe RuntimeException que não exige
+			// tratamento try/catch
+			// throw new IllegalArgumentException("Data de checkIn ou checkOut não pode ser anterior a data atual");
 			
+			
+				// Agora vamos lançar uma exceção personalizada
+			    // Ao lançar uma exceção devemos trata-la, deveriamos colocar essa linha do throw
+			    // entre um try/catch, porém como queremos que a função que chama esta classe
+			    // trate o erro então propagamos a exceção na assinatura do metodo através
+			    // do comando throws
+				throw new ExcecoesPersonalizadasExcecao("Data de checkIn ou checkOut não pode ser anterior a data atual");
+
 		} else if(checkIN.after(checkOUT)){
-			throw new IllegalArgumentException("Data de checkIn não pode ser posterior a data de checkOut");
+			throw new ExcecoesPersonalizadasExcecao("Data de checkIn não pode ser posterior a data de checkOut");
 		} else {	
 		
 			this.checkIn = checkIN;

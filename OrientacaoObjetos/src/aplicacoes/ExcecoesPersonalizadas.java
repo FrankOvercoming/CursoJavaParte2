@@ -6,6 +6,7 @@ import java.util.Date;
 import java.util.Scanner;
 
 import entidades.ExcecoesPersonalizadasReservas;
+import entidades.excecoes.ExcecoesPersonalizadasExcecao;
 
 
 public class ExcecoesPersonalizadas {
@@ -15,12 +16,12 @@ public class ExcecoesPersonalizadas {
 			Scanner sc = new Scanner(System.in);
 			SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 			try {
-			System.out.println("Numero do quarto: ");
-			int numeroQuarto = sc.nextInt();
-			System.out.println("Entre data do checkIn(dd/mm/yyyy): ");
-			Date checkIn = sdf.parse(sc.next());
-			System.out.println("Entre data do checkOut(dd/mm/yyyy): ");
-			Date checkOut = sdf.parse(sc.next());
+				System.out.println("Numero do quarto: ");
+				int numeroQuarto = sc.nextInt();
+				System.out.println("Entre data do checkIn(dd/mm/yyyy): ");
+				Date checkIn = sdf.parse(sc.next());
+				System.out.println("Entre data do checkOut(dd/mm/yyyy): ");
+				Date checkOut = sdf.parse(sc.next());
 //			if (checkIn.after(checkOut)) {
 //				System.out.println("Erro a data de checkIn não pode ser posterior"
 //						+ " a data de checkOut");
@@ -64,11 +65,16 @@ public class ExcecoesPersonalizadas {
 			catch (ParseException e) {
 				System.out.println("Valor inválido");
 			}
-			catch (IllegalArgumentException e) {
+			catch (ExcecoesPersonalizadasExcecao e) {
 				// Neste caso o e.getMessage retorna a mensagem cadastrada por mim la na classe
 				// de reserva que irá disparar este erro caso as datas estejam erradas quanto
 				// ao tempo de checkIn ou checkOut
 				System.out.println("Erro ao inserir datas: " + e.getMessage());
+			}
+			catch(RuntimeException e) {
+				// Através do UpCasting é possivel capturar erros como o
+			    // InputMismatchException pois todos os erros herdam de RuntimeException
+				System.out.println("Erro inesperado !!");
 			}
 	}
 
