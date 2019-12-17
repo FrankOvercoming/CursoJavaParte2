@@ -33,8 +33,6 @@
     <fullyQualifiedTypeName name="entidades.PolimorfismoProdutoUsado"/>
     <fullyQualifiedTypeName name="entidades.PolimorfismoProduto"/>
     <fullyQualifiedTypeName name="com.sun.tools.javac.comp.Enter"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="entidades.ClassesAbstratasPessoaFisica"/>
     <fullyQualifiedTypeName name="entidades.ClassesAbstratasPessoaJuridica"/>
     <fullyQualifiedTypeName name="entidades.ClassesAbstratasPessoas"/>
@@ -48,7 +46,16 @@
     <fullyQualifiedTypeName name="entidades.excecoes.ExcecoesPersonalizadasExcecao"/>
     <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
     <fullyQualifiedTypeName name="java.lang.Exception"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="entidades.ExcecoesExercicioFixacaoContaBancaria"/>
     <fullyQualifiedTypeName name="entidades.excecoes.ExcecoesExercicioFixacaoExcecao"/>
+    <fullyQualifiedTypeName name="java.io.FileWriter"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="java.io.BufferedWriter"/>
+    <fullyQualifiedTypeName name="entidades.DiretorioVerificado"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.Collections"/>
+    <fullyQualifiedTypeName name="java.util.Comparator"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
 </qualifiedTypeNameHistroy>
