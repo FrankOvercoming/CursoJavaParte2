@@ -11,6 +11,10 @@ public class Trabalhador {
 	private NivelTrabalhador nivel;
 	private Double salarioBase;
 	
+	// Quando colocamos um objeto dentro de outro objeto como estamos colocando aqui
+	// o Departamento e a lista de ContratoPorHora dizemos que estamos fazendo uma
+	// composição de objetos
+	
 	private Departamento departamento;
 	
 	// Arraylist precisa ser instanciado pois a classe gera valor nulo

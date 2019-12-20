@@ -58,4 +58,6 @@
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="model.services.InterfaceBrasilImpostosServico"/>
+    <fullyQualifiedTypeName name="entidades.InterfaceAluguelDeCarros"/>
 </qualifiedTypeNameHistroy>
