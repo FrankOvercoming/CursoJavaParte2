@@ -1,6 +1,7 @@
 package entidades;
 
 // Aplicacao da palavra final numa classe evita que ela seja herdada
+// Regra para final
 public final class ClassesAbstratasContaPoupanca extends ClassesAbstratasContaBancaria {
 	private Double taxaJuros;
 	

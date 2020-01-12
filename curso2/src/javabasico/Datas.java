@@ -24,6 +24,8 @@ public class Datas {
 		// Data original do java é 1 de janeiro de 1970 em milissegundos assim é armazenado
 		// então se pedirmos uma data com valor 0 de milissegundos teremos
 		// 21 horas do dia 31/12/1969
+		// Regra para datas
+		// Regra para Date
 		Date zero = new Date(0L);
 		
 		// Data 5 horas da manhã de 1970 a partir do valor padrão do Date do java

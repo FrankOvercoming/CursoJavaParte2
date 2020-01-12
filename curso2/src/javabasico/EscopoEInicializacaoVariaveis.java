@@ -7,7 +7,7 @@ public class EscopoEInicializacaoVariaveis {
 		double valor = 20;
 		String saida;
 		
-		// Regras de escopo {} e variavel inicializada ou não
+		// Regra para escopo {} e variavel inicializada ou não
 		// se a variavel não estiver visivel o compilador da erro
 		// isso acontece se a variavel for criada dentro de um escopo {}
 		// ou da erro de inicializacao se a variavel não tiver valor quando

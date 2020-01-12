@@ -52,6 +52,7 @@ public class FormatacaoPrintf {
 		System.out.println("Calculo3: " + calculo3);
 		System.out.println("Raiz quadrada: " + raizQuadrada);
 		// Termina o programa java
+		// Regra para terminar programa
 		System.exit(0);
 		System.out.println(b);
 		System.out.println("Valor c: " + c);
@@ -60,14 +61,21 @@ public class FormatacaoPrintf {
 		System.out.println("Olha ai");
 		// Printf print formatado
 		// %.2f = 2 casas decimais ou 2 casas ponto flutuante
+		// Regra para formatar saida de casas decimais
+		// Regra para printf
 		System.out.printf("%.2f%n", balance);
 		// Quebra de linha %n ou \n
+		// Regra para quebra de linha
+		// Regra para printf
 		System.out.printf("%.4f\n", balance);
 		// Mudando caracterista de ponto flutuante para formatação , ou . conforme país
+		// Regra para mudar ponto flutuante de virgula para ponto conforme país
+		// Regra para Locale
 		Locale.setDefault(Locale.US);
 		System.out.printf("%.4f\n", balance);
 		// Formatando printf para exibir conforme variáveis
 		// Vai exibir string e numero, para string usar %s e para numero %d
+		// Regra para printf
 		System.out.printf("%s is %d years old", name, idade);
 		
 	}

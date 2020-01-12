@@ -27,6 +27,8 @@ public abstract class MetodosAbstratosForma {
 	// usado de forma polimorfica, ou seja, que usando esta classe abstrata o metodo se adapte conforme o herdeiro que
 	// o  chama
 	// Todo metodo abstrato só pode estar numa classe abstrata
+	// uma classe que herda uma classe abstrata e essa classe abstrata tem metodo abstrato
+	// a classe que herdou tem que implementar os metodos abstratos da classe abstrata herdada
 	public abstract Double area();
 	
 }

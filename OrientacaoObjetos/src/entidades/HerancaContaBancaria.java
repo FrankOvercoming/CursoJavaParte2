@@ -10,6 +10,7 @@ public class HerancaContaBancaria {
 	// modificador de acesso protected, fez com que a classe ContaBancariaEmpresa pudesse acessar 
 	// a variavel saldo, pois com ela sendo private a subclasse não pode acessar, porem sendo
 	// protected a subclasse pode acessar mas sem que outros possam acessar
+	// Regra para protected
 	public HerancaContaBancaria() {
 		
 		

@@ -13,6 +13,8 @@ public class Bitwise {
 		System.out.println(a & b); // Resultado 1 pois
 		// o operador bitwise & é do tipo and 
 		// Para colocar como binario usar 0bSequenciaBinaria
+		// Regra para numeros binários
+		// Regra para bitwise
 		int i = 0b100;
 		int f = 0b011;
 		int veri = 0b001;

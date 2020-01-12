@@ -10,6 +10,7 @@ import entidades.*;
 // suas classes filhas, porem podemos usa-la como coleção como no caso do list<>, podendo assim
 // aproveitar o polimorfismo da função getSaldo() e reutilização de codigo com a função deposito();
 // pois não precisamos escrever uma função deposito para cada classe, elas usaram a função da classe abstrata
+// Regra para polimorfismo
 public class ClassesAbstratas {
 
 	public static void main(String[] args) {

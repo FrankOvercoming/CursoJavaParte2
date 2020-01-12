@@ -8,6 +8,10 @@ public class DataComCalendar {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		// SimpleDateFormat formata a saida da data em string
+		// ou converte a data string para Date
+		// Regra para datas
+		// Regra para SimpleDateFormat
 		SimpleDateFormat data = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
 		
 		Date data1 = new Date();

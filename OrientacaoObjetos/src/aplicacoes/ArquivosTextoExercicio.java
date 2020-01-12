@@ -14,6 +14,7 @@ import entidades.ProdutoConstrutor;
 public class ArquivosTextoExercicio {
 	// Esta classe importa um arquivo do tipo csv, que é um arquivo texto separado por 
 	// virgulas e cria outro arquivo, isto é, exporta em formato csv também
+	// Regra para arquivo texto
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub7

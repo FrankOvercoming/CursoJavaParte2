@@ -14,6 +14,7 @@ public class Enumerations {
 		
 		StatusPedidoEnum st1 = StatusPedidoEnum.Devolvido;
 		
+		// Para pegar o enumeration pelo valor usar valueOf - Regra para Enumeration
 		StatusPedidoEnum st2 = StatusPedidoEnum.valueOf("ProcessandO");
 		
 		System.out.println(st1);

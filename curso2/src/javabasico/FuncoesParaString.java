@@ -12,6 +12,7 @@ public class FuncoesParaString {
 		String trocaStringChar = original.replace('e', 'i');
 		String trocaString = original.replace("te", "ai");
 		
+		// Regra para String
 		int f  = original.indexOf("e");
 		int g = original.lastIndexOf("e");
 		System.out.println(original);

@@ -1,6 +1,6 @@
 package model.services;
 
-public class InterfaceBrasilImpostosServico {
+public class InterfaceBrasilImpostosServico implements InterfaceImpostosInterfaceServico {
 	
 	
 	// Aqui não será usado o Double Wrapper porque não precisa aceitar nulos
@@ -16,6 +16,21 @@ public class InterfaceBrasilImpostosServico {
 		} else
 			return valorBase * 0.15;
 		
+	}
+
+	
+	// Agora esta classe implementa uma Interface assim eu tenho um baixo acoplamento na
+	// classe InterfaceAluguelServico pois não uso mais uma classe em especifico e sim uma
+	// interface, assim sendo quando eu for instancia a classe InterfaceAluguelServico eu 
+	// indico uma implementacao para esta Interface assim eu posso trocar de servico de imposto
+	// sem ter que mexer na classe InterfaceAluguelServico, no caso a implementação usada
+	// será esta InterfaceBrasilImpostosServico, mas eu poderia criar uma outra sem ter que 
+	// mexer na classe InterfaceAluguelServico - Regra para Interface
+	
+	@Override
+	public Double imposto(Double valorBase) {
+		// TODO Auto-generated method stub
+		return impostos(valorBase);
 	}
 
 }

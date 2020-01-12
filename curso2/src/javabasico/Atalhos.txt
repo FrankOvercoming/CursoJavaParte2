@@ -1,0 +1,2 @@
+Regra para atalhos
+Ctrl+Shift+F auto indentação

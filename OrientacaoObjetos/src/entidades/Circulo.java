@@ -4,6 +4,9 @@ import java.text.DecimalFormat;
 
 public class Circulo {
 	
+	// Uso da palavra final nume declaração de variavel a torna uma constante
+	// a variável não pode ser modificada, pois tudo que leva final não pode algo
+	// Regra para final
 	public static final double PI = 3.14159;
 	public static DecimalFormat df = new DecimalFormat("0.00");
 	
