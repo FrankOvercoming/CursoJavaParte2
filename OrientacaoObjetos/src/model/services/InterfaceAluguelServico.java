@@ -47,6 +47,8 @@ public class InterfaceAluguelServico {
 		// Calculo de diferença entre datas
 		// Podemos fazer pegando o valor em milissegundos da data e tirar a diferença
 		// este valor é dado em long
+		// Regra para calculo de tempo
+		// Regra para calculo de intervalo entre datas
 		long tempoInicio = aluguelCarros.getDataInicio().getTime();
 		long tempoFim = aluguelCarros.getDataFim().getTime();
 		long diferenca = tempoFim - tempoInicio;

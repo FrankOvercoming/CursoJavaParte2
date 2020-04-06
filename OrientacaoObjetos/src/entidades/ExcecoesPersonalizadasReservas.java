@@ -14,6 +14,9 @@ public class ExcecoesPersonalizadasReservas {
 	
 	// Estando declarado como estatico não é instanciado a cada novo objeto e sim apenas
 	// uma vez, pois pertence a classe e não ao objeto
+	// Regra para static
+	// Regra para instancia
+	// Regra para instanciação
 	private static SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 	
 	
@@ -23,6 +26,9 @@ public class ExcecoesPersonalizadasReservas {
 			// Lançando essa exceção no construtor tb vamos nos beneficiar do try/catch utilizado
 			// na função que utiliza este objeto, sem que precisemos mudar nada na função
 			// que cria este objeto se a instanciação estiver ja entre Try/catch
+			// Regra para exceção
+			// Regra para throw
+			// Regra para tratamento de erros
 			throw new ExcecoesPersonalizadasExcecao("Data de checkIn ou checkOut não pode ser anterior a data atual");
 		} else if(checkIn.after(checkOut)){
 			throw new ExcecoesPersonalizadasExcecao("Data de checkIn não pode ser posterior a data de checkOut");
@@ -71,13 +77,19 @@ public class ExcecoesPersonalizadasReservas {
 			// exigiu a propagação porque ela herda a classe RuntimeException que não exige
 			// tratamento try/catch
 			// throw new IllegalArgumentException("Data de checkIn ou checkOut não pode ser anterior a data atual");
-			
+			// Regra para exceção
+			// Regra para throw
+			// Regra para tratamento de erros
 			
 				// Agora vamos lançar uma exceção personalizada
 			    // Ao lançar uma exceção devemos trata-la, deveriamos colocar essa linha do throw
 			    // entre um try/catch, porém como queremos que a função que chama esta classe
 			    // trate o erro então propagamos a exceção na assinatura do metodo através
 			    // do comando throws
+				// Regra para exceção
+				// Regra para throw
+				// Regra para tratamento de erros
+
 				throw new ExcecoesPersonalizadasExcecao("Data de checkIn ou checkOut não pode ser anterior a data atual");
 
 		} else if(checkIN.after(checkOUT)){
@@ -96,6 +108,10 @@ public class ExcecoesPersonalizadasReservas {
 		//Esta classe do java TimeUnit é um tipo enumerado complexo com algumas operações
 		// neste caso vamos converter o valor em milissegundos da diferença em 
 		// dias, é possivel converter em horas, minutos...
+		// Regra para data
+		// Regra para Tempo
+		// Regra para calculo de dias
+		// Regra para calculo de tempo
 		return TimeUnit.DAYS.convert(diferenca, TimeUnit.MILLISECONDS );
 	}
 

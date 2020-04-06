@@ -11,6 +11,9 @@ public class Vetor {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Informe o numero de alturas: ");
 		double[] tamanho = new double[sc.nextInt()];
+		// Para criar um vetor com um tamanho determinado
+		// Regra para Vetor
+		// Regra para Vetores
 		double valorTotal = 0;
 		for(int i=0; i < tamanho.length; i++) {
 			System.out.println("Informe altura: " + (i+1) );

@@ -19,6 +19,13 @@ public class ArquivosTextoExercicio {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub7
 		String path = "C:\\temp\\lista.csv";
+		// Conteudo do arquivo lista.csv
+		//		TV led,1300.29,1
+		//		Radio,320.67,2
+		//		geladeira,900.12,6
+		//		maquina de lavar, 124.45,3
+		//		IcocoPhone, 56.38,7
+		
 		ProdutoConstrutor prod = null;
 		List<ProdutoConstrutor> lista = new ArrayList<>();
 		File arq = new File(path);

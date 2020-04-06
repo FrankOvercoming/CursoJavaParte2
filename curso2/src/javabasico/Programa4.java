@@ -12,6 +12,11 @@ public class Programa4 {
 		
 		//Ordem de precedencia
 		// ! > && > || quer dizer primeiro executa o "not", depois o "and" e depois o "or"
+		// Regra para or
+		// Regra para and
+		// Regra para not
+		// Regra para booleanos
+		
 		
 		System.out.println("A maior que 10: " + Amaior);
 		System.out.println("A menor que 10: " + Amenor);

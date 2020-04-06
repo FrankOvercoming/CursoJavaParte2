@@ -21,6 +21,11 @@ public class FileManipulandoArquivos {
 		// colocando uma função como argumento de outra função File::isFile
 		// assim como se faz nos predicados, usando reference methods
 		// aqui criamos um vetor com os arquivos que estão dentro da pasta informada
+		// Regra para Predicate
+		// Regra para filtrar arquivos
+		// Regra para metodos referenciados
+		// Regra para referencia para metodo
+		// Regra para reference methods
 		File arquivos[] = pasta.listFiles(File::isFile);
 		
 		System.out.println("Arquivos: ");

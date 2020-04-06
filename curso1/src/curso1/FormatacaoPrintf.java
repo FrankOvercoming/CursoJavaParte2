@@ -62,6 +62,8 @@ public class FormatacaoPrintf {
 		// Printf print formatado
 		// %.2f = 2 casas decimais ou 2 casas ponto flutuante
 		// Regra para formatar saida de casas decimais
+		// Regra para formatar numero para decimais
+		// Regra para casas decimais
 		// Regra para printf
 		System.out.printf("%.2f%n", balance);
 		// Quebra de linha %n ou \n

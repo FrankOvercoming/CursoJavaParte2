@@ -12,7 +12,7 @@ import java.util.List;
 
 import entidades.ProdutoConstrutor;
 
-public class InterfaceComparable {
+public class InterfaceComparableSemMetodo {
 
 	public static void main(String[] args) {
 		String path = "C:\\temp\\listaNomes.txt";
@@ -29,6 +29,10 @@ public class InterfaceComparable {
 				lista.add(linha);
 				linha = br.readLine();
 			}
+			// Operacao padrão para ordenar uma coleção padrão do java
+			// Regra para Ordenação
+			// Regra para Coleção
+			// Regra para Comparable
 			Collections.sort(lista);
 			for(String valor : lista) {
 				System.out.println(valor);

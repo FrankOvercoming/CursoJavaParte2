@@ -69,11 +69,18 @@ public class ExcecoesPersonalizadas {
 				// Neste caso o e.getMessage retorna a mensagem cadastrada por mim la na classe
 				// de reserva que irá disparar este erro caso as datas estejam erradas quanto
 				// ao tempo de checkIn ou checkOut
+				// Regra para exceção
+				// Regra para throw
+				// Regra para tratamento de erros
+				
 				System.out.println("Erro ao inserir datas: " + e.getMessage());
 			}
 			catch(RuntimeException e) {
 				// Através do UpCasting é possivel capturar erros como o
 			    // InputMismatchException pois todos os erros herdam de RuntimeException
+				// Regra para exceção
+				// Regra para throw
+				// Regra para tratamento de erros
 				System.out.println("Erro inesperado !!");
 			}
 	}

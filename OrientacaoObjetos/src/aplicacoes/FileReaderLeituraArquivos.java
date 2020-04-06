@@ -10,6 +10,11 @@ public class FileReaderLeituraArquivos {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		String path = "C:\\temp\\arquivotexto.txt";
+		// Conteudo do arquivo arquivotexto.txt
+		//		bom dia
+		//		boa tarde
+		//		oi e vamos que vamos
+		
 		FileReader fl = null;
 		BufferedReader bf = null;
 		

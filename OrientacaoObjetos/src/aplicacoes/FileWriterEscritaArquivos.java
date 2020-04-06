@@ -14,7 +14,8 @@ public class FileWriterEscritaArquivos {
 		
 		try ( 
 				// Se usar true no FileWriter ele acrescenta no arquivo se não ele cria
-				// o arquivo do zero
+				// o arquivo do zero, mas se colocar true e o arquivo não existir
+				// ele cria do mesmo jeito
 				FileWriter fw = new FileWriter(caminho, true);
 				BufferedWriter bw = new BufferedWriter(fw);
 				){
